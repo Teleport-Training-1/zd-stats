@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  zdstats:
+      env_file: 
+        - zd_creds.env
+      image: zen-stats:0.0.2
+      ports:
+          - 8888:8888
+      volumes:
+          - ./:/home/jovyan/work
